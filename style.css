@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(236, 234, 234);
     margin: 0;
     padding: 0;
-
 }
 
 .menu {
@@ -13,44 +13,198 @@ body {
     height: 70px;
     align-items: center;
     background-color: #0e9709;
-}
-.menu {
     display: flex;
     justify-content: center;
 }
 
+/* Liens du menu principal */
 .menu li a {
-    
-    color: rgb(253, 253, 253);
+    color: #fff;
     font-size: small;
     text-align: center;
-    padding: 27px;    
+    padding: 27px;
     margin: 0;
     text-decoration: none;
-
 }
 
 .menu li a:hover {
     background-color: #08f858;
 }
 
+/* Logo */
 #logo {
     height: 18vh;
     width: auto;
-    margin-top: 40px;
+    margin: 0 10px 0 0;
+
 }
 
+/* Sous-menu */
 .sous-menu {
     list-style-type: none;
     margin: 0;
-    padding: 50px;
-    position: absolute;
-    top: 50vh;
+    padding: 0;
+    width: 300px;
     background-color: #0e9709;
+    position: absolute;
+    top: 70px;
+    /* Pour placer juste sous le menu */
     display: none;
+    
 }
+
+
+.sous-menu li a {
+    color: #fff;
+    font-size: small;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
+    
+}
+
 
 .menu li:hover .sous-menu {
     display: block;
+}
 
+.sous-menu li a:hover {
+    background-color: #08f858;
+}
+
+.sous-sous-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #0e9709;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    display: none;
+}
+
+#university {
+    left: 300px;
+    top: 55px;
+}
+
+#university li a {
+    padding: 20px 0;
+}
+
+.sous-sous-menu li a {
+    color: #fff;
+    font-size: small;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+}
+.sous-menu li:hover .sous-sous-menu {
+    display: block;
+}
+
+.sous-sous-menu li a:hover {
+    background-color: #08f858;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+
+}
+
+#lien_sociaux {
+    position: fixed;
+    
+    width: 50px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 0 0 5px;
+    z-index: 1000; 
+}
+
+#lien_sociaux a {
+    color: #fff;
+    margin: 0;
+    width: 12.5vh;
+    height: 11.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+#lien_sociaux a:hover {
+    background-color: #07dd4e;
+}
+
+#face {
+    background-color: #3b5998;
+}
+
+
+#insta {
+    background-color: #e4405f;
+}
+
+
+
+#twit {
+    background-color: #1da1f2;
+}
+
+
+
+#what {
+    background-color: #25d366;
+}
+
+
+
+#tele {
+    background-color: #0088cc;
+}
+
+
+
+#youtu {
+    background-color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #0e9709;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 5px;
+    line-height: 1.5;
+    
 }
