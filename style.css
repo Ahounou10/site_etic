@@ -112,7 +112,7 @@ main {
     margin: auto;
     padding: 20px;
     background-color: rgb(255, 255, 255);
-    height: 5000px;
+    height: 100%;
 
 }
 
@@ -162,7 +162,6 @@ main {
 }
 
 
-
 #what {
     background-color: #25d366;
 }
@@ -178,50 +177,6 @@ main {
 #youtu {
     background-color: #ff0000;
 }
-
-/*
-.slider {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border: 2px solid #333;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    width: 1200px;
-    
-    animation: slideRight 20s linear infinite;
-}
-
-.slides img {
-    width: 300px;
-    height: 300px;
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-300px);
-    }
-
-    50% {
-        transform: translateX(-600px);
-    }
-
-    75% {
-        transform: translateX(-900px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-*/
 
 
 
@@ -566,26 +521,20 @@ main {
     color: rgb(64, 63, 63);
 }
 
-
 /* Videos */
-
-
 
 .album_video {
     display: flex;
     flex-wrap: nowrap;
-    /* garder tous les articles sur une seule ligne */
     gap: 3vh;
     justify-content: center;
     overflow-x: auto;
-    /* permet le défilement horizontal si nécessaire */
     -webkit-overflow-scrolling: touch;
     padding-bottom: 8px;
 }
 
 .article_alb_video {
     flex: 0 0 320px;
-    /* largeur fixe, n'occupe pas l'espace restant */
     width: 320px;
     background-color: #ffffff;
     padding: 0;
@@ -613,6 +562,123 @@ main {
 }
 
 
+/* Section Temoignages */
+
+.temoignages {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5vh;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.article_temoignage {
+    flex: 1;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.article_temoignage a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.article_temoignage img {
+    width: 70%;
+    border-radius: 60%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.texte_temoignage {
+    padding: 15px;
+}
+
+.article_temoignage h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #2a7a2a;
+   
+}
+
+.article_temoignage .descp {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(64, 63, 63);
+    line-height: 1.4;
+}
+
+.texte_temoignage{
+    text-align: center;
+    background-color: rgb(206, 228, 206);
+}
+
+#temoignage h2 {
+    text-align: center;
+    color: rgb(121, 119, 119);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.temoi {
+    float: left;
+    padding: 10px 20px;
+    background-color: #2daa15;
+    color: #f3efef;
+    text-decoration: none;
+    font-size: 2.5vh;
+    border-radius: 5px;
+}
+
+.temoi:hover {
+    background-color: #23870f;
+    color: #f1eeee;
+}
+
+/* Section Partenaires */
+
+#partenaire {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#partenaire h2 {
+    text-align: center;
+    color: rgb(121, 119, 119);
+    padding: 10px;
+    margin: 0;
+}
+
+#div_part {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#partenaire img {
+    height: 100px;
+    width: auto;
+    margin: 0;
+    
+}
+
+
+
+
 
 
 
@@ -635,6 +701,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 footer p {
     margin: 5px;
     line-height: 1.5;
