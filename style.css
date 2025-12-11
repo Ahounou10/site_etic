@@ -286,7 +286,7 @@ main {
 }
 
 
-#banniere {
+.banniere {
     width: 96.5%;
     height: auto;
     padding: 20px;
@@ -354,16 +354,20 @@ main {
     justify-content: center;
 }
 
+
 .article_actu {
-    flex:1 ;
+    flex: 1;
     background-color: #ffffff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .article_actu a {
     text-decoration: none;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -377,6 +381,10 @@ main {
     margin: 10px;
     font-size: 3.5vh;
     color: rgb(64, 63, 63);
+}
+
+.article_actu p:not(.date) {
+    flex-grow: 1; 
 }
 
 #date {
@@ -402,6 +410,7 @@ main {
     background-color: #aeb3af;
     color: #f1eeee;
 }
+
 
 /* Section événements */
 
@@ -456,13 +465,21 @@ main {
 }
 
 
-.lieu {
+.date {
     font-size: 2.5vh;
+    margin-top: auto;
     padding: 2vh;
     text-align: center;
     color: rgb(62, 143, 79);
     background-color: #d4f8d4;
+    margin: 0;
 }
+
+
+.article_even p:not(.date) {
+    flex-grow: 1;
+}
+
 
 /* photos */
 
@@ -486,6 +503,7 @@ main {
     -webkit-overflow-scrolling: touch;
     padding-bottom: 8px;
 }
+
 
 .article_alb_photos {
     flex: 0 0 320px; /* largeur fixe, n'occupe pas l'espace restant */
@@ -640,6 +658,7 @@ main {
     color: #f1eeee;
 }
 
+
 /* Section Partenaires */
 
 #partenaire {
@@ -678,19 +697,7 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Footer */
 
 footer {
     background-color: #0e9709;
