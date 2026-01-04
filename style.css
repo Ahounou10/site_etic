@@ -575,11 +575,9 @@ main {
 .album_photos {
     display: flex;
     flex-wrap: nowrap;
-    /* garder tous les articles sur une seule ligne */
     gap: 3vh;
     justify-content: center;
     overflow-x: auto;
-    /* permet le défilement horizontal si nécessaire */
     -webkit-overflow-scrolling: touch;
     padding-bottom: 8px;
 }
@@ -587,7 +585,6 @@ main {
 
 .article_alb_photos {
     flex: 0 0 320px;
-    /* largeur fixe, n'occupe pas l'espace restant */
     width: 320px;
     background-color: #ffffff;
     padding: 0;
