@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 70px;
+    align-items: center;
+    background-color: #0e9709;
+    display: flex;
+    justify-content: center;
+}
+
+/* Liens du menu principal */
+.menu li a {
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    padding: 27px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #08f858;
+}
+
+/* Logo */
+#logo {
+    height: 18vh;
+    width: auto;
+    margin: 0 10px 0 0;
+
+}
+
+/* Sous-menu */
+.sous-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #0e9709;
+    position: absolute;
+    top: 70px;
+    display: none;
+
+}
+
+
+.sous-menu li a {
+    color: #fff;
+    font-size: small;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
+
+}
+
+
+.menu li:hover .sous-menu {
+    display: block;
+    z-index: 1000;
+}
+
+.sous-menu li a:hover {
+    background-color: #08f858;
+}
+
+.sous-sous-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #0e9709;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    display: none;
+}
+
+#university {
+    left: 300px;
+    top: 55px;
+}
+
+#university li a {
+    padding: 20px 0;
+}
+
+.sous-sous-menu li a {
+    color: #fff;
+    font-size: small;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.sous-menu li:hover .sous-sous-menu {
+    display: block;
+}
+
+.sous-sous-menu li a:hover {
+    background-color: #08f858;
+}
+
+
+
+footer {
+    background-color: #0e9709;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+label {
+    min-width: 20%;
+    margin-bottom: 5px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.aligne {
+    display: flex;
+    gap : 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer p {
+    margin: 5px;
+    line-height: 1.5;
+}

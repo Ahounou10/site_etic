@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Pre-Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">ACCUEIL</a></li>
+
+                <li><a href="#">PRESENTATION</a>
+                    <ul class="sous-menu">
+                        <li><a href="#section1">HISTORIQUE</a></li>
+                        <li><a href="#section2">ORGANIGRAMME</a></li>
+                        <li><a href="#section3">MOTS DU DIRECTEUR GENERAL</a></li>
+                        <li><a href="#section1">NOS PARTENAIRES</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#section3">FORMATION</a>
+
+                    <ul class="sous-menu">
+                        <li><a href="#section1">SECONDAIRE TECHNIQUE</a></li>
+                        <li><a href="#section2">SECONDAIRE PROFESIONNEL</a></li>
+                        <li><a href="#section3">FORMATION QUALIFIANTE</a></li>
+                        <li><a href="#section1">BTS/DTS(JOUR ET SOIR)</a></li>
+                        <li><a href="#section1">LICENCE PROFESSIONELLE (JOURS ET SOIR)</a></li>
+                        <li><a href="#section2">MASTEUR PROFESSIONEL (JOUR ET SOIR)</a></li>
+                        <li><a href="#section3">FORMATION QUALIFIANTE</a></li>
+                        <li><a href="#section1">INGENIEUR (JOUR ET SOIR)</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#section1">NOS ECOLES</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">GRANDES ECOLES</a>
+                            <ul class="sous-sous-menu">
+                                <li><a href="#section1">ETIC II PLATEAUX</a></li>
+                                <li><a href="#section2">ETIC MARCORY</a></li>
+                                <li><a href="#section3">ETIC YOPOUGON</a></li>
+                                <li><a href="#section1">ETIC KORHOGO</a></li>
+                                <li><a href="#section2">ETIC ABOBO</a></li>
+                                <li><a href="#section3">ETIC BANDOUKOU</a></li>
+                                <li><a href="#section1">ETIC ODIENNE</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">UNIVERSITES</a>
+                            <ul class="sous-sous-menu" id="university">
+                                <li><a href="#section1">ETIC UNIVERSITY</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><img id="logo" src="img/logo.png" alt=""></li>
+
+                <li><a href="#section2">ACTUALITÉS</a></li>
+
+                <li><a href="#section1">VIE ESTUDIANTNE</a>
+                    <ul class="sous-menu">
+                        <li><a href="#section1">CLUBS ET ASSOCIATIONS</a></li>
+                        <li><a href="#section2">EVENNEMENTS</a></li>
+                        <li><a href="#section3">RESULTATS</a></li>
+                        <li><a href="#section1">ANCIENS</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#section2">MEDIA </a>
+                    <ul class="sous-menu">
+                        <li><a href="#section1">PHOTOS</a></li>
+                        <li><a href="#section2">VIDEOS</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#section3">NOS CONTACTES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="traitement.php" method="post">
+
+        <h1>FICHE DE PRE-INSCRIPTION</h1>
+
+        <fieldset>
+            <legend>ETAT CIVIL</legend>
+
+            <div class="aligne">
+                <label for="ecole">Choisir une ecole :</label>
+                <select name="ecole" id="ecole" required>
+                    <option value="">--Sélectionner une école--</option>
+                    <option value="etic_plateaux">ETIC II PLATEAUX</option>
+                    <option value="etic_marcory">ETIC MARCORY</option>
+                    <option value="etic_yopougon">ETIC YOPOUGON</option>
+                    <option value="etic_korhogo">ETIC KORHOGO</option>
+                    <option value="etic_abobo">ETIC ABOBO</option>
+                    <option value="etic_bandoukrou">ETIC BANDOUKOU</option>
+                    <option value="etic_odienne">ETIC ODIENNE</option>
+
+                </select>
+            </div>
+
+            <div class="aligne">
+                <label for="annee_acade">Année Académique</label>
+                <select name="annee_acade" id="annee_acade" required>
+                    <option value="">--Sélectionner une année académique--</option>
+                    <option value="2023-2024">2023-2024</option>
+                    <option value="2024-2025">2024-2025</option>
+                </select>
+            </div>
+
+            <div class="aligne">
+                <label for="nom">Nom </label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="aligne">
+                <label for="prenoms">Prénoms</label>
+                <input type="text" id="prenoms" name="prenoms" required>
+            </div>
+
+
+            <div class="aligne">
+                <label for="date_naissance">Date de naissance</label>
+                <input type="date" id="date_naissance" name="date_naissance" required>
+            </div>
+
+            <div class="aligne">
+                <label for="lieu_naissance">Lieu de naissance</label>
+                <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+            </div>
+
+            <div class="aligne">
+                <label for="">Sexe</label>
+
+                <input type="radio" id="M" name="sexe" value="masculin" required>
+                <label for="M">Masculin</label>
+
+                <input type="radio" id="F" name="sexe" value="feminin" required>
+                <label for="F">Féminin</label>
+            </div>
+
+            <div class="aligne">
+                <label for="lieu_residence">Lieu de résidence</label>
+                <input type="text" id="lieu_residence" name="lieu_residence" required>
+            </div>
+
+
+
+            <div class="aligne">
+                <label for="nationalite">Nationalité</label>
+                <input type="text" id="nationalite" name="nationalite" required>
+            </div>
+
+            <div class="aligne">
+                <label for="">N° Telephone  </label>
+
+                <input type="tel"  name="tel_etu" placeholder="Tel"  required>
+                
+                <input type="tel"  name="tel_etu_opt" placeholder="Tel (OPTIONNEL)" >
+            
+            </div>
+
+            <div class="aligne">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+        </fieldset>
+        <hr>
+
+
+        <fieldset>
+            <legend>RENSEIGNEMENT SUR LES PARENTS</legend>
+
+            <div class="aligne">
+                <label for="pere">Faire un choix</label>
+                <div>
+                <input type="radio" id="pere" name="parent" value="masculin" required>
+                <label for="pere">Père</label>
+
+                <input type="radio" id="tuteur" name="parent" value="tuteur" required>
+                <label for="tuteur">Tuteur</label>
+
+                <input type="radio" id="mere" name="parent" value="mere" required>
+                <label for="mere">Mère</label>
+
+                <input type="radio" id="tutrice" name="parent" value="tutrice" required>
+                <label for="F">Tutrice</label>
+                </div>
+            </div>
+
+            <div class="aligne">
+                <label for="nom">Nom </label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            </div>
+
+            <div class="aligne">
+                <label for="prenoms">Prénoms</label>
+                <input type="text" id="prenoms" name="prenoms" placeholder="Prénoms" required>
+            </div>
+
+
+            <div class="aligne">
+                <label for="domicile">Domicile </label>
+                <input type="text" id="domicile" name="domicile" placeholder="Domicile" required>
+            </div>
+
+
+
+            <div class="aligne">
+                <label for="">N° Telephone  </label>
+
+                <input type="tel"  name="tel_etu" placeholder="Tel"  required>
+                
+                <input type="tel"  name="tel_etu_opt" placeholder="Tel (OPTIONNEL)" >
+            
+            </div>
+
+        </fieldset>
+        <hr>
+
+
+        <fieldset>
+            <legend>INFORMATIONS SUR LES ETUDES</legend>
+
+            <div class="aligne">
+                <label for="N°mat_nat">N° matricule national</label>
+                <input type="text" id="N°mat_nat" name="N°Mat_Nat">
+            </div>
+
+            <div class="aligne">
+                <label for="mat_mesrs">N° matricule MESRS</label>
+                <input type="text" id="mat_mesrs" name="N°Mat_mesrs">
+            </div>
+
+            <div class="aligne">
+                <label for="diplome">Diplome actuel</label>
+                <input type="text" id="diplome" name="diplome">
+            </div>
+
+            <div class="aligne">
+                <label for="N°_table">N° de table</label><br>
+                <input type="tel" id="N°_table" name="N°_table">
+            </div>
+
+
+            <div class="aligne">
+                <label for="dernier_etablis">Dernier etablissement</label>
+                <input type="text" id="dernier_etablis" name="dernier_etablis" placeholder="Dernier etablissement fréquenté">
+            </div>
+
+            <div class="aligne">
+                <label for="class_anterieure">Classe anterieure</label>
+                <input type="text" id="class_anterieure" name="class_anterieure" placeholder="Classe anterieure">
+            </div>
+
+            <div class="aligne">
+                <label for="class_suivante">Classe à suivre</label>
+                <input type="text" id="class_suivante" name="class_suivante" placeholder="Classe à suivre">
+            </div>
+
+            <div class="aligne">
+                <label for="filiere">Choisir une filiere (nouveau bachelier)</label>
+                <select name="filiere" id="filiere" required>
+                    <option value="">--Sélectionner une filiere--</option>
+                    <option value="etic_plateaux">ETIC II PLATEAUX</option>
+                    <option value="etic_marcory">ETIC MARCORY</option>
+                    <option value="etic_yopougon">ETIC YOPOUGON</option>
+                    <option value="etic_korhogo">ETIC KORHOGO</option>
+                    <option value="etic_abobo">ETIC ABOBO</option>
+                    <option value="etic_bandoukrou">ETIC BANDOUKOU</option>
+                    <option value="etic_odienne">ETIC ODIENNE</option>
+
+
+                </select><br>
+                <a href="">Information sur les filieres</a>
+            </div>
+
+        </fieldset>
+        <hr>
+
+
+
+        <fieldset>
+            <legend> AUTRES INFORMATIONS </legend>
+
+            <div class="aligne">
+                <label for="affecte">Statut</label>
+
+                <input type="radio" id="affecte" name="statut" value="affecte" required>
+                <label for="affecte">Affecté</label>
+
+                <input type="radio" id="non_affecte" name="statut" value="non_affecte" required>
+                <label for="non_affecte">Non affecté</label>
+            </div>
+
+            <div class="aligne">
+                <label for="affecte">Prise en charge</label>
+
+                <input type="radio" id="oui" name="prise_en_charge" value="oui" required>
+                <label for="oui">Oui</label>
+
+                <input type="radio" id="non" name="prise_en_charge" value="non" required>
+                <label for="non">Non</label>
+            </div>
+
+            <div class="aligne">
+                <label for="affecte">Avez-vous un problème de santé particulier ?</label>
+
+                <input type="radio" id="sante" name="probleme_sante" value="oui" required>
+                <label for="sante">Oui</label>
+
+                <input type="radio" id="non_sante" name="probleme_sante" value="non" required>
+                <label for="non_sante">Non</label>
+            </div>
+
+            <div class="aligne">
+                <label for="details_sante">Si oui, précisez :</label>
+                <input type="text" id="details_sante" name="details_sante" placeholder="Si oui, précisez ici">
+            </div>
+
+        </fieldset>
+
+
+        <div>
+            <button type="submit">Valider</button>
+        </div>
+
+
+        <fieldset>
+
+            <legend>RAPPEL DES DOSSIERS A FOURNIR</legend>
+            <p>
+                2 Extraits de naissance ou jugement supplétif (originaux),
+                2 Photocopies de la pièce d'Identité (CNI, Attestation d'identité ou
+                passeport), 2 Photocopies du dernier diplôme légalisé, 2 Photocopies
+                du dernier bulletin, 8 Photos d'identité (même tirage), 1 Paquet de
+                RAME 80g (Suprème, Double A, Smart Copy, Impulse), 1 Paquet de marqueur
+                effaçable de 10 (Schneider 293, BIC).
+                NB: 1 Copie de chaque dossier suscité pour les réinscriptions (Anciens
+                élèves/étudiant du Groupe ETIC)
+            </p>
+        </fieldset>
+
+
+    </form>
+
+
+    <footer>
+        <p> Copyright &copy; 2018 - 2025 ETIC - Ecole Technique Informatique et Commerciale <br>
+            administration@eticecole.com / Enseignants
+        </p>
+    </footer>
+
+</body>
+
+</html>
