@@ -87,5 +87,5 @@ $stmtEtudiant->execute([
     ':probleme_sante' => $probleme_sante,
     ':details_sante' => $details_sante
 ]);
-header("Location: formulaire.html?success=1");
+header("Location: formulaire.php?success=1");
 exit;

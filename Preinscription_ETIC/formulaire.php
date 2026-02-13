@@ -357,8 +357,12 @@
 
 
         <input type="submit" value="Valider">
-
-
+        
+        <?php if (isset($_GET['success'])): ?>
+            <div class="success-message">
+                ✅ Pré-inscription réussie
+            </div>
+        <?php endif; ?>
 
         <fieldset>
 
@@ -390,8 +394,12 @@
 
 </html>
 
-<?php if (isset($_GET['success'])): ?>
-    <p style="color: green; font-weight: bold;">
-        Pré-inscription réussie ✅
-    </p>
-<?php endif; ?>
+<!--<script>
+    // Supprimer le paramètre success de l'URL pour que le message disparaisse au rafraîchissement
+    window.addEventListener('load', function() {
+        if (window.location.search.includes('success=1')) {
+            // Remplacer l'URL sans recharger la page
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    });
+</script>-->
